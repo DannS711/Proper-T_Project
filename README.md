@@ -12,9 +12,9 @@
 
 ## Introduction
 
-Welcome to the Proper-T project! Proper-T is a web application that aims to simplify the process of property transactions and management. Whether you are looking to buy, sell, or rent a property, Proper-T provides a user-friendly platform to streamline the entire process. It offers features like property listings, advanced search, and secure payment options for users.
+Welcome to the Proper-T project! Proper-T is a web application that aims to simplify the process of real estate property transactions and management. Whether you are looking to buy, sell, or rent a property, Proper-T provides a user-friendly platform to streamline the entire process. It offers features like property listings, advanced search, and secure payment options for users.
 
-This repository contains the source code for the Proper-T web application, including both the server-side and client-side components. Please follow the instructions below to set up the project and start contributing.
+This repository contains the source code for the Proper-T web application, including both the server-side and client-side components. Please follow the instructions below to set up the application.
 
 ## Tech Stack
 
