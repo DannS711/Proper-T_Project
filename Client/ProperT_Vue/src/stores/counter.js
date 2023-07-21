@@ -16,7 +16,6 @@ export const useCounterStore = defineStore('useCounterStore', {
   }),
   actions: {
     async loginHandler(email, password) {
-      // console.log('masuk login handler', email, password)
       try {
         const { data } = await axios({
           method: 'POST',
@@ -32,9 +31,7 @@ export const useCounterStore = defineStore('useCounterStore', {
         localStorage.setItem('membership', data.membership)
         localStorage.setItem('access_token', data.access_token)
         if (data.membership === 'Active') {
-          // console.log("masuk");
           this.isMember = true
-          // console.log(this.isMember);
         }
         this.isLoggedIn = true
         this.router.push('/')
@@ -59,7 +56,6 @@ export const useCounterStore = defineStore('useCounterStore', {
     },
 
     async registerHandler(username, email, password, phoneNumber) {
-      // console.log("masuk register handler", email, password);
       try {
         const { data } = await axios({
           method: 'POST',
@@ -71,7 +67,6 @@ export const useCounterStore = defineStore('useCounterStore', {
             phoneNumber
           }
         })
-        // console.log(data.message);
         Swal.fire({
           toast: true,
           position: 'top-end',
@@ -94,7 +89,6 @@ export const useCounterStore = defineStore('useCounterStore', {
     },
 
     async googleLoginHandler(credential) {
-      // console.log("masuk google login handler", credential);
       try {
         const { data } = await axios({
           method: 'POST',
@@ -110,7 +104,6 @@ export const useCounterStore = defineStore('useCounterStore', {
         localStorage.setItem('access_token', data.access_token)
         if (data.membership === 'Active') {
           this.isMember = true
-          // console.log(this.isMember);
         }
         this.isMember = false
         this.isLoggedIn = true
@@ -210,7 +203,6 @@ export const useCounterStore = defineStore('useCounterStore', {
     },
 
     async fetchUsersListings(filter, search, selectedOption) {
-      // console.log(search,"search", filter, "filter", selectedOption, "selected");
       try {
         const queryParams = {}
         if (search) {
@@ -249,7 +241,6 @@ export const useCounterStore = defineStore('useCounterStore', {
       TypeId,
       imgUrl
     ) {
-      // console.log(title, adType, address, description, price, landArea, buildingArea, TypeId, imgUrl);
       try {
         const { data } = await axios({
           method: 'POST',
@@ -278,7 +269,6 @@ export const useCounterStore = defineStore('useCounterStore', {
             access_token: localStorage.getItem("access_token")
           }
         })
-        // console.log(data);
         Swal.fire({
           icon: 'success',
           title: 'Listing has been edited',
@@ -337,14 +327,11 @@ export const useCounterStore = defineStore('useCounterStore', {
             access_token: localStorage.getItem('access_token')
           }
         })
-        // console.log(data);
 
         const callBack = this.userMembershipChange
 
         window.snap.pay(data.token, {
           onSuccess: function (result) {
-            /* You may add your own implementation here */
-            // console.log("payment success");
             Swal.fire({
               icon: 'success',
               title: 'Payment Success',
@@ -353,7 +340,6 @@ export const useCounterStore = defineStore('useCounterStore', {
             callBack()
           },
           onError: function (result) {
-            /* You may add your own implementation here */
             Swal.fire({
               icon: 'error',
               title: 'Payment Failed!',
@@ -361,7 +347,6 @@ export const useCounterStore = defineStore('useCounterStore', {
             });
           },
           onClose: function () {
-            /* You may add your own implementation here */
             Swal.fire({
               icon: 'warning',
               title: 'Payment Cancelled',
