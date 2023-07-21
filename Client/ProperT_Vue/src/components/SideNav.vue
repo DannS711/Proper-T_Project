@@ -21,7 +21,6 @@ export default {
       this.options.filter = ''
       this.options.search = ''
       this.options.selectedOption = ''
-      // console.log("clicked");
     }
   }
 }
