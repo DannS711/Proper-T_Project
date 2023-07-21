@@ -1,0 +1,68 @@
+[
+    {
+      "title": "Beautiful House",
+      "status": "Available",
+      "adType": "Sale",
+      "address": "123 Main Street",
+      "description": "A stunning house with modern amenities.",
+      "price": 5000000,
+      "landArea": 1000,
+      "buildingArea": 2000,
+      "UserId": 1,
+      "TypeId": 1,
+      "imgUrl": ""
+    },
+    {
+      "title": "Spacious Apartment",
+      "status": "Available",
+      "adType": "Rent",
+      "address": "456 Elm Avenue",
+      "description": "A large apartment with a great view.",
+      "price": 15000000,
+      "landArea": 0,
+      "buildingArea": 1500,
+      "UserId": 1,
+      "TypeId": 2,
+      "imgUrl": ""
+    },
+    {
+      "title": "Cozy Cottage",
+      "status": "Sold",
+      "adType": "Sale",
+      "address": "789 Oak Road",
+      "description": "A charming cottage in a peaceful location.",
+      "price": 2500000,
+      "landArea": 800,
+      "buildingArea": 1000,
+      "UserId": 1,
+      "TypeId": 1,
+      "imgUrl": ""
+    },
+    {
+      "title": "Luxurious Villa",
+      "status": "Available",
+      "adType": "Sale",
+      "address": "321 Pine Lane",
+      "description": "An elegant villa with top-notch amenities.",
+      "price": 12000000,
+      "landArea": 2500,
+      "buildingArea": 3000,
+      "UserId": 1,
+      "TypeId": 1,
+      "imgUrl": ""
+    },
+    {
+      "title": "Prime Commercial Space",
+      "status": "Available",
+      "adType": "Rent",
+      "address": "987 Maple Street",
+      "description": "A strategically located commercial space.",
+      "price": 75000000,
+      "landArea": 5000,
+      "buildingArea": 10000,
+      "UserId": 1,
+      "TypeId": 3,
+      "imgUrl": ""
+    }
+  ]
+  

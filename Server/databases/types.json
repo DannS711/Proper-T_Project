@@ -1,0 +1,23 @@
+[
+    {
+        "name": "House"
+    },
+    {
+        "name": "Apartment"
+    },
+    {
+        "name": "Land"
+    },
+    {
+        "name": "Store"
+    },
+    {
+        "name": "Factory"
+    },
+    {
+        "name": "Office"
+    },
+    {
+        "name": "Warehouse"
+    }
+]
