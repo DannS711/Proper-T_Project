@@ -3,7 +3,7 @@ import { defineStore } from 'pinia'
 // import router from '../router'
 import Swal from 'sweetalert2'
 
-const baseUrl = 'http://localhost:8000'
+const baseUrl = 'http://localhost:3000'
 import axios from 'axios'
 export const useCounterStore = defineStore('useCounterStore', {
   state: () => ({
